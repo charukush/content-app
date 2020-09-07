@@ -10,4 +10,7 @@ export class ContentService {
   public async getContentList(){
     return this.httpClient.get("http://localhost:3000/dev/content").toPromise();
   }
+  public async putContent(content){
+    return this.httpClient.put("http://localhost:3000/dev/content",content).toPromise();
+  }
 }

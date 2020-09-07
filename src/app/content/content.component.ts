@@ -13,7 +13,10 @@ export class ContentComponent implements OnInit {
   data;
  
   async ngOnInit()  {
-    this.data = await this.cs.getContentList();
+    var record = await this.cs.getContentList();
+    if(record && record["Items"]){
+      this.data = record["Items"];
+    }
   }
 
 }

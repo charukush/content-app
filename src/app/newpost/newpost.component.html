@@ -1,0 +1,24 @@
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  
+    <label>
+      Post Id:
+      <input type="text" formControlName="id">
+    </label>
+  
+    <label>
+      Post Title:
+      <input type="text" formControlName="title">
+    </label>
+
+    <label>
+        Post Summary:
+        <input type="text" formControlName="summary">
+      </label>
+
+      <label>
+        Post Detail:
+        <input type="text" formControlName="detail">
+      </label>
+    <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  </form>
