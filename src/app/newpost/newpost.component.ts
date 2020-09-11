@@ -21,6 +21,7 @@ export class NewpostComponent implements OnInit {
     // TODO: Use EventEmitter with form value
     console.warn(this.profileForm.value);
     await this.service.putContent(this.profileForm.value);
+    this.profileForm.reset();
 
   }
 

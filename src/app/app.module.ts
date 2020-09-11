@@ -6,6 +6,8 @@ import { ContentComponent } from './content/content.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NewpostComponent } from './newpost/newpost.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,9 @@ import { NewpostComponent } from './newpost/newpost.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
